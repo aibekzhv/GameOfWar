@@ -19,10 +19,11 @@ function battle() {
       firstRun = false;
       buildCards();
       shuffleArray(cards);
+      dealCards(cards);
     }
     console.log('works');
   }
-
+//deck
   function buildCards() {
     cards = []; // i store here
     for(s in suits){
@@ -39,7 +40,15 @@ function battle() {
     }
     console.log(cards);
   }
-
+//dealing cards
+  function dealCards (array){ 
+      for(var i = 0; i<array.length; i++ ) {
+          var m = i % 2;
+          players[m].push(array[i]);
+      }
+      console.log(players);
+  }
+///here shuffling using math
   function shuffleArray(array){
      for(var x = array.length -1;x>0;x--){
        var ii = Math.floor(Math.random() * (x+1));
@@ -50,7 +59,6 @@ function battle() {
      return array;
   }
 
-/*----- cached element references -----*/
 
 
   
