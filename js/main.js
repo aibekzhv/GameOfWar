@@ -13,36 +13,42 @@ var fightButton = document.querySelector("#btnBattle");
 fightButton.addEventListener('click',battle);
 
 //functions
+//this function for button
 function battle() {
     if(firstRun){
-    firstRun = false;
-    buildCards();
+      firstRun = false;
+      buildCards();
+      shuffleArray(cards);
     }
-  console.log('works');
-}
+    console.log('works');
+  }
 
-function buildCards() {
-    cards = [];
-    for (s in suits ) {
-        var suitNew = suits [s][0].toUpperCase();
-        for (n in cardFace) {
-            var card = {
-                suit:suits[s],
-                num:cardFace[n],
-                cardValue:parseInt(n) + 2,
-                icon:suitNew
-            }
-            cards.push(card);
+  function buildCards() {
+    cards = []; // i store here
+    for(s in suits){
+      var suitNew = suits[s][0].toUpperCase();
+      for(n in cardFace){
+        var card = {
+          suit:suits[s],
+          num:cardFace[n],
+          cardValue:parseInt(n) +2,
+          icon:suitNew
         }
-        console.log(cards);
-        console.log(suitNew);
+        cards.push(card);
+      }
     }
+    console.log(cards);
+  }
 
-}
-
-
-  
-  
+  function shuffleArray(array){
+     for(var x = array.length -1;x>0;x--){
+       var ii = Math.floor(Math.random() * (x+1));
+       var temp = array[x];
+       array[x] = array[ii];
+       array[ii] = temp;
+     }
+     return array;
+  }
 
 /*----- cached element references -----*/
 
