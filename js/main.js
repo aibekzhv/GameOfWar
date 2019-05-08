@@ -21,8 +21,18 @@ function battle() {
       shuffleArray(cards);
       dealCards(cards);
     }
-    console.log('works');
+    attack();
   }
+function attack() {
+    if(!gameover){
+        var card1 = players[0].shift();
+        var card2 = players[1].shift();
+        var pot = [card1, card2];
+        
+
+    }
+}
+
 //deck
   function buildCards() {
     cards = []; // i store here
