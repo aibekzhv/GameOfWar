@@ -1,3 +1,7 @@
+.wrapper {
+  display: grid;
+
+}
 .icard {
   position: absolute;
   padding: 10px;
@@ -62,33 +66,51 @@
 
 .hand {
   position: relative;
+  
 }
 
 .players {
   float: left;
   width: 49%;
+  background-color: green;
   min-height: 300px;
-  border: 1px solid #ddd;
+  border: 3px solid white;
 }
 
 .score {
-  font-size: 1.5em;
+  
+  color: white;
+  font-size: 20px;
+  
+}
+#scoret {
+  padding-bottom: 25px;
+  padding-top: 15px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-size: bold;
+  color: white;
 }
 
 #message {
-  font-size: 1.2em;
+  font-size: 45px;
   color: white;
   background-color: black;
-  padding: 5px;
+  padding: 15px;
+  height: 50px;
+  text-align: center;
+  
 }
 
 .btn {
-  border-radius: 5px;
+  font-size: 35px;
+  border-radius: 15px;
   padding: 9px 20px;
   color: white;
   display: inline-block;
   text-align: center;
   text-shadow: 1px 1px #000;
+  
 }
 
 #btnBattle {
