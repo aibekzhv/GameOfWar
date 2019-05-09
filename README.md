@@ -1,4 +1,5 @@
 #Card War Game
+
 ##Game rules:
 1. War is a very simple card game for two players. Much like real war it's incredibly long and pointless. It's mostly a kids game, since it relies exclusively on luck of the draw. Like most card games it has plenty of regional variations, but the rules used on this site are the standard rules from Wikipedia. The game is played as follows:
 1. Each player gets dealt half the deck, 26 cards, and the cards are put face down in a stack in front of the players.

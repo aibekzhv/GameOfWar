@@ -11,8 +11,7 @@ var timer;
 var r = 0;
 //DOM elements
 var fightButton = document.querySelector("#btnBattle");
-// var fightButton10 = document.querySelector("#btnBattle10");
-// var fightButton50 = document.querySelector("#btnBattle50");
+
 var p1 = document.querySelector("#player1 .hand");
 var p2 = document.querySelector("#player2 .hand");
 var s1 = document.querySelector("#player1 .score");
