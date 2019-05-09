@@ -20,12 +20,7 @@ var s2 = document.querySelector("#player2 .score");
 
 //event listeners
 fightButton.addEventListener('click', battle);
-// fightButton10.addEventListener('click', function() {
-//   rounds(10);
-// });
-// fightButton50.addEventListener('click', function() {
-//   rounds(50);
-// });
+
 //functions
 function rounds(a) {
   r = a;
