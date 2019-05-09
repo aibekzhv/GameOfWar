@@ -84,7 +84,7 @@ function checkWinner(card1, card2, pot) {
     players[1] = players[1].concat(pot);
   } else {
     battlemode(pot);
-    outputMessage("Battle Mode");
+    outputMessage("Battle Mode! :WAR:");
   }
 }
 

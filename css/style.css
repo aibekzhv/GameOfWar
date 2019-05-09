@@ -75,10 +75,8 @@
 }
 
 .score {
-  
   color: white;
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
 #scoret {
   padding-bottom: 25px;
