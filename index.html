@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Game of War</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
+<html>
 
+<head>
+  <title>War Card</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="wraper">
-        <div id="start"></div>
-        <div id="message"></div>
-        <div id="board">
-            <div id="Player1" class="Players">
-                <div class="score"></div>
-                <div class="hand"></div>
-            </div>
-            <div id="Player1" class="Players">
-                <div class="score"></div>
-                <div class="hand"></div>
-            </div>
-            <div class="action">
-                <button id="btnBattle" type="button" class="btn">fight</button>
-            </div>
-        </div>
-    </div>   
+  <div id="wrapper">
+    <div id="message">Click Fight to Start Game</div>
+    <div id="board">
+      <div id="player1" class="players">
+        <div>SCORE:<span class="score"></span></div>
+        <div class="hand"></div>
+      </div>
+      <div id="player2" class="players">
+        <div>SCORE:<span class="score"></span></div>
+        <div class="hand"></div>
+      </div>
+      <div id="action">
+        <button id="btnBattle" type="button" class="btn">Fight</button>
+        <button id="btnBattle10" type="button" class="btn">10 Rounds</button>
+        <button id="btnBattle50" type="button" class="btn">50 Rounds</button>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+
 </body>
+
 </html>
