@@ -21,22 +21,9 @@ var s2 = document.querySelector("#player2 .score");
 //event listeners
 fightButton.addEventListener('click', battle);
 
-//functions
-function rounds(a) {
-  r = a;
-  timer = setInterval(function() {
-    battle()
-  }, 1000);
-}
 
+//Functions 
 function battle() {
-  if (timer) {
-    r--;
-    outputMessage("Rounds left " + r);
-    if (r < 1) {
-      window.clearInterval(timer);
-    }
-  }
   if (firstRun) {
     firstRun = false;
     buildCards();

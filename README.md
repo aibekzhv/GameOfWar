@@ -1,4 +1,5 @@
 # WAR (card game)
+*  Project 1 (Browser-based game)
 
 ![CardGameWar](https://i.imgur.com/4fXLjFt.png)
 
@@ -28,6 +29,7 @@
 9. Card battle and check for winner
 
 ```
+### Technologies used: HTML, CSS, JS
 
 ```
 Thank you!!
