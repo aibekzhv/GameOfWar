@@ -1,9 +1,8 @@
 #Card War Game
 
 ##Game rules:
-*War is a very simple card game for two players. Much like real war it's incredibly long and *
-*pointless. The game is played as follows:*
-
+###War is a very simple card game for two players. Much like real war it's incredibly long and pointless. The game is played as follows:
+![CardGameWar](https://i.imgur.com/4fXLjFt.png)
 
 1. Each player gets dealt half the deck, 26 cards, and the cards are put face down in a stack in front of the players.
 2. Both players turn their top card face up at the same time. The person with the higher card wins that draw, and takes both the cards. They are put to the side to form a new stack, which the player can use when he finishes his current stack.
@@ -14,7 +13,7 @@
 >START THE GAME [https://aibekzhv.github.io/GameOfWar/];
 
 ```
-#Pseudo code:
+Pseudocode:
 1. Build structure in HTML
 2. Eventlisteners in JavaScript DOM
 3. Build deck of Cards
