@@ -1,3 +1,4 @@
+//variables 
 var suits = ["spades", "hearts", "clubs", "diams"];
 var cardFace = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 var cards = [];
@@ -9,9 +10,9 @@ var firstRun = true;
 var gameover = false;
 var timer;
 var r = 0;
+
 //DOM elements
 var fightButton = document.querySelector("#btnBattle");
-
 var p1 = document.querySelector("#player1 .hand");
 var p2 = document.querySelector("#player2 .hand");
 var s1 = document.querySelector("#player1 .score");
@@ -107,17 +108,14 @@ function battlemode(pot) {
   }
 }
 
-
 function showCard(c, p) {
   var move = p * 40;
-  //var bgColor = (c.icon == "H" || c.icon == "D") ? "red" : "black";
   var bCard = '<div class="icard ' + c.suit + ' " style="left:' + move + 'px">';
   bCard += '<div class="cardtop suit">' + c.num + '<br></div>';
   bCard += '<div class="cardmid suit"></div>';
   bCard += '<div class="cardbottom suit">' + c.num + '<br></div></div>';
   return bCard;
 }
-
 
 function buildCards() {
   cards = [];
@@ -133,7 +131,6 @@ function buildCards() {
       cards.push(card);
     }
   }
-
 }
 
 function dealCards(array) {
